@@ -1,0 +1,21 @@
+@import "variables";
+@import "bootstrap/bootstrap";
+
+.nav-link {
+  padding-left: $spacer;
+}
+
+.products {
+  padding: $spacer*2 0;
+
+}
+
+.card {
+  margin-bottom: 0;
+  + .btn {
+    margin-bottom: $spacer*2;
+  }
+  .card-block {
+    padding-bottom: $spacer*1.5;
+  }
+}
