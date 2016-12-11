@@ -3,11 +3,17 @@
 
 .nav-link {
   padding-left: $spacer;
+  &:focus {
+    outline: none;
+  }
+}
+
+.modal-body {
+  padding: 4rem 0;
 }
 
 .products {
   padding: $spacer*2 0;
-
 }
 
 .card {

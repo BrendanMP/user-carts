@@ -5183,6 +5183,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .nav-link {
   padding-left: 1rem; }
+  .nav-link:focus {
+    outline: none; }
+
+.modal-body {
+  padding: 4rem 0; }
 
 .products {
   padding: 2rem 0; }
