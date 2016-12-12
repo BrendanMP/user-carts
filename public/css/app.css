@@ -5187,7 +5187,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     outline: none; }
 
 .modal-body {
-  padding: 4rem 0; }
+  padding: 4rem; }
 
 .products {
   padding: 2rem 0; }
@@ -5197,6 +5197,12 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .card + .btn {
     margin-bottom: 2rem; }
   .card .card-block {
-    padding-bottom: 1.5rem; }
+    padding-bottom: 1.5rem;
+    min-height: 12rem; }
+
+.card-img-bg {
+  min-height: 10rem;
+  background-size: cover;
+  background-position: center; }
 
 /*# sourceMappingURL=app.css.map */

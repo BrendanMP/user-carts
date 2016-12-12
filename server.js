@@ -1,15 +1,18 @@
 var express = require('express');
+var mongoose = require('mongoose');
+var expressHBS = require('express-handlebars');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var expressHBS = require('express-handlebars');
 
 var index = require('./routes/index');
 var admin = require('./routes/admin');
 
 var app = express();
+
+mongoose.connect('mongodb://localhost:27017/DevShop');
 
 // view engine setup
 app.engine('.hbs', expressHBS({
