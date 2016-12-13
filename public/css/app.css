@@ -5188,14 +5188,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .products {
   padding: 2rem 0; }
-
-.card {
-  margin-bottom: 0; }
-  .card + .btn {
-    margin-bottom: 2rem; }
-  .card .card-block {
-    padding-bottom: 1.5rem;
-    min-height: 12rem; }
+  .products .card {
+    margin-bottom: 0; }
+    .products .card + .btn {
+      margin-bottom: 2rem; }
+    .products .card .card-block {
+      padding-bottom: 1.5rem;
+      min-height: 12rem; }
 
 .card-img-bg {
   min-height: 12rem;
