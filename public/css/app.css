@@ -5186,9 +5186,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .nav-link:focus {
     outline: none; }
 
-.modal-body {
-  padding: 4rem; }
-
 .products {
   padding: 2rem 0; }
 
@@ -5201,8 +5198,22 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     min-height: 12rem; }
 
 .card-img-bg {
-  min-height: 10rem;
+  min-height: 12rem;
   background-size: cover;
   background-position: center; }
+
+.modal-header {
+  display: flex;
+  align-items: center; }
+  .modal-header .modal-title {
+    flex: 2 1 auto; }
+  .modal-header button {
+    margin-right: 0.5rem; }
+
+.modal-body {
+  padding: 2rem 1rem; }
+
+.page-section {
+  padding: 4rem 0; }
 
 /*# sourceMappingURL=app.css.map */
