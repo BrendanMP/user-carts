@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var csrf = require('csurf');
 var passport = require('passport');
+var validator = require('express-validator');
 
 var Product = require('../models/product');
 

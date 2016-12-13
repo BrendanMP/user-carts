@@ -9,6 +9,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var passport = require('passport');
 var flash = require('connect-flash');
+var validator = require('express-validator');
 
 var index = require('./routes/index');
 var admin = require('./routes/admin');
@@ -32,6 +33,7 @@ app.set('view engine', '.hbs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(validator());
 app.use(cookieParser());
 app.use(session({secret: 'secretSession', resave: false, saveUninitialized: false}));
 app.use(flash());
