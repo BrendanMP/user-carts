@@ -8,10 +8,6 @@
   }
 }
 
-.modal-body {
-  padding: 4rem;
-}
-
 .products {
   padding: $spacer*2 0;
 }
@@ -28,8 +24,26 @@
 }
 
 .card-img-bg {
-  min-height: 10rem;
+  min-height: 12rem;
   background-size: cover;
   background-position: center;
 }
 
+.modal-header {
+  display: flex;
+  align-items: center;
+  .modal-title {
+    flex: 2 1 auto;
+  }
+  button {
+    margin-right: $spacer/2;
+  }
+}
+
+.modal-body {
+  padding: $spacer*2 $spacer;
+}
+
+.page-section {
+  padding: $spacer*4 0;
+}
