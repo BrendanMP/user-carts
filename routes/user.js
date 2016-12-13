@@ -20,6 +20,7 @@ router.use('/', notLoggedIn, function (req, res, next) {
 });
 
 router.post('/signup', passport.authenticate('local.signup', {
+    badRequestMessage: 'Missing email or password.',
     successRedirect: '/user/profile',
     failureRedirect: '/user/signup',
     failureFlash: true
@@ -36,6 +37,7 @@ router.get('/signup', function (req, res, next) {
 });
 
 router.post('/login', passport.authenticate('local.login', {
+    badRequestMessage: 'Missing email or password.',
     successRedirect: '/user/profile',
     failureRedirect: '/user/login',
     failureFlash: true
