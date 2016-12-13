@@ -5181,9 +5181,45 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.nav-link {
-  padding-left: 1rem; }
-  .nav-link:focus {
+.navbar .container {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.navbar-nav {
+  text-align: right;
+  flex: 1 1 auto; }
+
+.navbar-toggleable-md {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .navbar-toggleable-md {
+      width: auto; } }
+
+.nav-link:focus {
+  outline: none; }
+@media (min-width: 768px) {
+  .nav-link {
+    padding-left: 1rem; } }
+.nav-link.cart {
+  padding-left: 0;
+  margin-left: 1rem;
+  margin-right: 0;
+  white-space: nowrap; }
+  @media (min-width: 768px) {
+    .nav-link.cart {
+      margin-right: 1rem; } }
+.nav-link .tag-default {
+  background: rgba(0, 0, 0, 0.2); }
+
+.navbar-toggler {
+  margin-right: 1rem; }
+  .navbar-toggler:focus {
     outline: none; }
 
 .products {
