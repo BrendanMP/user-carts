@@ -1,4 +1,4 @@
-<form method="post" action="/user/signin">
+<form method="post" action="/user/login">
     {{#if hasErrors}}
         <div class="alert alert-danger">
             {{# each messages}}
@@ -17,5 +17,8 @@
     <div class="form-group">
         <input type="hidden" name="_csrf" value="{{ csrfToken }}">
         <button type="submit" class="btn btn-block btn-primary">Login</button>
+    </div>
+    <div class="form-group">
+        <a href="/user/signup" class="btn btn-block btn-outline-secondary">Create Account</a>
     </div>
 </form>

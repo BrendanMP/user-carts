@@ -4,7 +4,6 @@ var LocalStrategy= require('passport-local').Strategy;
 
 passport.serializeUser(function (user, done) {
     done(null, user.id);
-
 });
 
 passport.deserializeUser(function (id, done) {
@@ -49,7 +48,7 @@ passport.use('local.signup', new LocalStrategy({
     });
 }));
 
-passport.use('local.signin', new LocalStrategy({
+passport.use('local.login', new LocalStrategy({
     usernameField: 'email',
     passwordField: 'password',
     passReqToCallback: true
