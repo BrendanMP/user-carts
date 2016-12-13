@@ -12,6 +12,7 @@ var flash = require('connect-flash');
 var validator = require('express-validator');
 
 var index = require('./routes/index');
+var userRoutes = require('./routes/user');
 var admin = require('./routes/admin');
 var about = require('./routes/about');
 
@@ -48,6 +49,7 @@ app.use(require('node-sass-middleware')({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
+app.use('/user', userRoutes);
 app.use('/admin', admin);
 app.use('/about', about);
 
