@@ -10,16 +10,15 @@
 
 .products {
   padding: $spacer*2 0;
-}
-
-.card {
-  margin-bottom: 0;
-  + .btn {
-    margin-bottom: $spacer*2;
-  }
-  .card-block {
-    padding-bottom: $spacer*1.5;
-    min-height: 12rem;
+  .card {
+    margin-bottom: 0;
+    + .btn {
+      margin-bottom: $spacer*2;
+    }
+    .card-block {
+      padding-bottom: $spacer*1.5;
+      min-height: 12rem;
+    }
   }
 }
 
