@@ -17,7 +17,10 @@
     }
     .card-block {
       padding-bottom: $spacer*1.5;
-      min-height: 12rem;
+      min-height: none;
+      @include media-breakpoint-up(md) {
+        min-height: 12rem;
+      }
     }
   }
 }

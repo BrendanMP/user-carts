@@ -267,7 +267,7 @@ html {
 @-ms-viewport {
   width: device-width; }
 html {
-  font-size: 16px;
+  font-size: 17px;
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: transparent; }
 
@@ -4243,7 +4243,7 @@ button.close {
   font-size: 1rem;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
-  border-radius: -0.0625rem -0.0625rem 0 0; }
+  border-radius: -0.05882rem -0.05882rem 0 0; }
   .popover-title:empty {
     display: none; }
 
@@ -5194,7 +5194,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
       margin-bottom: 2rem; }
     .products .card .card-block {
       padding-bottom: 1.5rem;
-      min-height: 12rem; }
+      min-height: none; }
+      @media (min-width: 768px) {
+        .products .card .card-block {
+          min-height: 12rem; } }
 
 .card-img-bg {
   min-height: 12rem;
