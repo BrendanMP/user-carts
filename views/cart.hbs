@@ -25,7 +25,7 @@
                                             <i class="fa fa-minus fa-fw " aria-hidden="true"></i>
                                         </a>
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-2 text-xs-right">
                                         <h4>${{ this.price }}</h4>
                                     </div>
                                 </div>
@@ -50,12 +50,12 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <h3><strong>Total: ${{totalPrice}}</strong></h3>
+            <h3><span class="float-xs-right mr-1"><span class="mr-1">Total:</span>${{totalPrice}}</span></h3>
         </div>
-    </div>
-    <div class="row">
         <div class="col-md-12">
-            <a href="/checkout" class="btn btn-success">Checkout</a>
+            <hr>
+            <a href="/" class="btn btn-secondary">Continue Shopping</a>
+            <a href="/checkout" class="btn btn-success float-xs-right">Checkout</a>
         </div>
     </div>
 {{else}}
