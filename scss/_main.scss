@@ -5,8 +5,11 @@ nav.navbar {
   padding-left:0;
   padding-right: 0;
   .container {
-    padding-right: 0;
-
+    display: flex;
+    align-items: center;
+    &.users {
+      padding-right: 0;
+    }
   }
   .menu {
     margin-top: $spacer;
