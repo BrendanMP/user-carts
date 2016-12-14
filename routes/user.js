@@ -66,7 +66,7 @@ router.post('/login', passport.authenticate('local.login', {
         req.session.oldUrl = null;
         res.redirect(oldUrl);
     } else {
-        res.redirect('/user/profile');
+        res.redirect('/');
     }
 });
 
