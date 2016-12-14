@@ -4,13 +4,23 @@ var csrf = require('csurf');
 var passport = require('passport');
 
 var Order = require('../models/order');
+var Cart = require('../models/cart');
 
 var csfrProtection = csrf();
 router.use(csfrProtection);
 
 router.get('/profile', isLoggedIn, function (req, res, next) {
-    Order.find();
-    res.render('user/profile');
+    Order.find({user: req.user}, function(err, orders) {
+        if (err) {
+            return res.write('Error!');
+        }
+        var cart;
+        orders.forEach(function(order) {
+            cart = new Cart(order.cart);
+            order.items = cart.generateArray();
+        });
+        res.render('user/profile', { orders: orders });
+    });
 });
 
 router.get('/logout', function (req, res, next) {
