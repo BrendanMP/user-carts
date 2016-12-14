@@ -3,11 +3,14 @@ var router = express.Router();
 var csrf = require('csurf');
 var passport = require('passport');
 
+var Order = require('../models/order');
+
 var csfrProtection = csrf();
 router.use(csfrProtection);
 
 router.get('/profile', isLoggedIn, function (req, res, next) {
-    res.render('user/profile')
+    Order.find();
+    res.render('user/profile');
 });
 
 router.get('/logout', function (req, res, next) {
@@ -21,10 +24,17 @@ router.use('/', notLoggedIn, function (req, res, next) {
 
 router.post('/signup', passport.authenticate('local.signup', {
     badRequestMessage: 'Missing email or password.',
-    successRedirect: '/user/profile',
     failureRedirect: '/user/signup',
     failureFlash: true
-}));
+}), function (req, res, next) {
+    if (req.session.oldUrl) {
+        var oldUrl = req.session.oldUrl;
+        req.session.oldUrl = null;
+        res.redirect(oldUrl);
+    } else {
+        res.redirect('/user/profile');
+    }
+});
 
 router.get('/signup', function (req, res, next) {
     var messages = req.flash('error');
@@ -38,10 +48,17 @@ router.get('/signup', function (req, res, next) {
 
 router.post('/login', passport.authenticate('local.login', {
     badRequestMessage: 'Missing email or password.',
-    successRedirect: '/user/profile',
     failureRedirect: '/user/login',
     failureFlash: true
-}));
+}), function (req, res, next) {
+    if (req.session.oldUrl) {
+        var oldUrl = req.session.oldUrl;
+        req.session.oldUrl = null;
+        res.redirect(oldUrl);
+    } else {
+        res.redirect('/user/profile');
+    }
+});
 
 router.get('/login', function (req, res, next) {
     var messages = req.flash('error');
@@ -52,6 +69,8 @@ router.get('/login', function (req, res, next) {
         hasErrors: messages.length > 0
     });
 });
+
+
 
 module.exports = router;
 
