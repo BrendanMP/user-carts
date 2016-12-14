@@ -1,11 +1,10 @@
 <section class="page-section">
-    <h1>Profile</h1>
+    <h2>My Orders</h2>
     <hr>
-    <h3>My Orders</h3>
     {{# each orders }}
         <div class="card mt-1">
             <div class="card-block">
-                <strong>Order #</strong>
+                <strong>Order #{{this.orders}}</strong>
             </div>
             <ul class="list-group list-group-flush">
                 {{# each this.items}}
