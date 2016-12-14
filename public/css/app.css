@@ -5194,6 +5194,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .navbar-nav {
   text-align: right;
   flex: 1 1 auto; }
+  .navbar-nav .fa-shopping-cart {
+    font-size: 120%;
+    line-height: 1; }
 
 .navbar-toggleable-md {
   width: 100%; }
