@@ -14,13 +14,14 @@
                     <div class="card-img-bg" style="background-image: url({{ this.imagePath }})"></div>
                     <div class="card-block">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-xs-9">
                                 <h6 class="card-title">{{ this.title }}</h6>
                             </div>
-                            <div class="col-md-4">
-                                <h6 class="card-title text-md-right text-muted">${{ this.price }}</h6>
+                            <div class="col-xs-3 text-xs-right">
+                                <h6 class="card-title text-md-right">${{ this.price }}</h6>
                             </div>
                         </div>
+                        <hr class="mt-0">
                         <p class="card-text text-muted small">{{ this.description }}</p>
                     </div>
                 </div>
