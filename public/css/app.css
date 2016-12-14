@@ -5181,15 +5181,18 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.navbar .container {
-  width: 100%;
+nav.navbar {
   padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap; }
+  padding-right: 0; }
+  nav.navbar .container {
+    padding-right: 0; }
+  nav.navbar .menu {
+    margin-top: 1rem; }
+    nav.navbar .menu .nav-item {
+      margin-right: 0.25rem; }
+  nav.navbar .spacer {
+    margin-right: 0.5rem;
+    margin-left: 0.75rem; }
 
 .navbar-nav {
   text-align: right;
@@ -5211,8 +5214,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     padding-left: 1rem; } }
 .nav-link.cart {
   padding-left: 0;
+  margin-top: -1rem;
   margin-left: 1rem;
-  margin-right: 0;
+  margin-right: 1rem;
   white-space: nowrap; }
   @media (min-width: 768px) {
     .nav-link.cart {

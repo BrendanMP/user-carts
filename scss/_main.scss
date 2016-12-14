@@ -1,16 +1,22 @@
 @import "variables";
 @import "bootstrap/bootstrap";
 
-.navbar {
+nav.navbar {
+  padding-left:0;
+  padding-right: 0;
   .container {
-    width:100%;
-    padding-left: 0;
     padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+
+  }
+  .menu {
+    margin-top: $spacer;
+    .nav-item {
+      margin-right: $spacer*0.25;
+    }
+  }
+  .spacer {
+    margin-right: 0.5rem;
+    margin-left: 0.75rem;
   }
 }
 
@@ -40,8 +46,10 @@
   }
   &.cart {
     padding-left: 0;
+    margin-top:-1rem;
     margin-left: $spacer;
-    margin-right: 0;
+    margin-right: $spacer;
+
     white-space: nowrap;
     @include media-breakpoint-up(md) {
       margin-right: $spacer;
