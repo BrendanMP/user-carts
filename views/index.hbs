@@ -1,9 +1,17 @@
+
 <section class="products">
+    <div class="row">
+        <div class="col-sm-12">
+            <div id="success" class="alert alert-success {{# if noMessage}}hidden-xs-up{{/if}}">
+                {{ successMsg }}
+            </div>
+        </div>
+    </div>
     <div class="row">
         {{# each products }}
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="card">
-                    <div class="card-img-bg" style="background-image: url('{{ this.imagePath }}')"></div>
+                    <div class="card-img-bg" style="background-image: url({{ this.imagePath }})"></div>
                     <div class="card-block">
                         <div class="row">
                             <div class="col-md-8">

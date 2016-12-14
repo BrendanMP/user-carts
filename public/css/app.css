@@ -5197,7 +5197,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .navbar-toggleable-md {
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     .navbar-toggleable-md {
       width: auto; } }
 
@@ -5253,5 +5253,16 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 .page-section {
   padding: 4rem 0; }
+  .page-section.cart-section > .row {
+    margin-bottom: 1rem; }
+
+.thumbnail {
+  min-height: 4rem;
+  background-size: cover;
+  background-position: center center; }
+
+span.qty {
+  font-weight: bold;
+  margin: 0 1rem; }
 
 /*# sourceMappingURL=app.css.map */

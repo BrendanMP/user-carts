@@ -1,19 +1,45 @@
-<section class="page-section">
+<section class="page-section cart-section">
 {{# if products}}
     <div class="row">
         <div class="col-md-12">
             <ul class="list-group">
                 {{# each products}}
                     <li class="list-group-item">
+                        <div class="row">
+                            <div class="col-xs-4 col-lg-2">
+                                <div class="thumbnail" style="background-image: url({{ this.item.imagePath }})"></div>
+                            </div>
+                            <div class="col-xs-8 col-lg-10">
+                                <div class="row">
+                                    <div class="col-xs-6 col-md-8">
+                                        <h4>{{ this.item.title }}</h4>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <span class="qty">{{ this.qty }}</span>
+                                        <button class="btn btn-sm btn-primary">
+                                            <i class="fa fa-plus fa-fw" aria-hidden="true"></i>
+                                        </button>
+                                        <button class="btn btn-sm btn-secondary">
+                                            <i class="fa fa-minus fa-fw " aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <h4>${{ this.price }}</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item hidden-xs-up">
                         <span class="tag-pill tag-default">{{ this.qty }}</span>
                         <strong>{{ this.item.title }}</strong>
                         <span class="tag-pill tag-default">{{ this.price }}</span>
                         <div class="btn-group">
-                            <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown"></button>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Reduce by 1</a></li>
-                                <li><a href="#">Remove All</a></li>
-                            </ul>
+                            <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown">Edit</button>
+                            <div class="dropdown-menu" aria-labelledby="supportedContentDropdown">
+                                <a class="dropdown-item" href="/user/profile">Profile Settings</a>
+                                <a class="dropdown-item" href="/user/logout">Remove Item</a>
+                            </div>
                         </div>
                     </li>
                 {{/each}}
@@ -22,12 +48,12 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <strong>Total: ${{totalPrice}}</strong>
+            <h3><strong>Total: ${{totalPrice}}</strong></h3>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <button class="btn btn-success" type="button">Checkout</button>
+            <a href="/checkout" class="btn btn-success">Checkout</a>
         </div>
     </div>
 {{else}}

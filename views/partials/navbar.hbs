@@ -39,14 +39,15 @@
                 {{/if}}
             </ul>
         </div>
-
-        <ul class="nav navbar-nav">
-            <li class="nav-item float-xs-right">
-                <a class="nav-link cart" href="/cart/">Shopping Cart &nbsp;
-                    <span class="tag-pill tag-default">{{session.cart.totalQty}}</span>
-                </a>
-            </li>
-        </ul>
+        {{# if products}}
+            <ul class="nav navbar-nav">
+                <li class="nav-item float-xs-right">
+                    <a class="nav-link cart" href="/cart/">Shopping Cart &nbsp;
+                        <span class="tag-pill tag-default">{{session.cart.totalQty}}</span>
+                    </a>
+                </li>
+            </ul>
+        {{/if}}
 
     </div>
 

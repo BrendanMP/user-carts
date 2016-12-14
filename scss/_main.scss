@@ -21,7 +21,7 @@
 
 .navbar-toggleable-md {
   width:100%;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     width: auto;
   }
 }
@@ -94,4 +94,21 @@
 
 .page-section {
   padding: $spacer*4 0;
+  &.cart-section {
+    > .row {
+      margin-bottom: $spacer;
+
+    }
+  }
+}
+
+.thumbnail {
+  min-height: $spacer*4;
+  background-size: cover;
+  background-position: center center;
+}
+
+span.qty {
+  font-weight: bold;
+  margin: 0 $spacer;
 }
