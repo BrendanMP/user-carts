@@ -3,7 +3,7 @@
 This is a Node app built with Express, Mongo, Handlebars, SCSS, and Bootstrap V4. Hosted with Heroku and mLabs, deployed [here...](https://blooming-escarpment-65220.herokuapp.com/)   
 
 ### User Stories
-The goal of this project was to create a basic boilerplate shop and checkout experience.
+The goal of this project was to create a basic boilerplate shop and checkout. The app does not yet have an Admin 
  
 #### The Customer 
 * Customers can add items to a session stored shopping cart.
@@ -28,9 +28,10 @@ The goal of this project was to create a basic boilerplate shop and checkout exp
 ---------
 
 ### Future Features
-I'd like to continue to expand on the app and use this repo as place to experiment with new ideas and continue to learn more about working with server-side Node apps.
+I'd like to continue to expand on the app and use this repo as a place to experiment with new ideas and continue to learn more about working with server-side Node apps.
 * Create an Admin User & Dashboard for managing items and orders.
+* Remove bootstrap classes from markup and replace with mixins.
 * Richer user experience.
     * Transactional Emails
-    * Expanded user profiles. Save address, payment methods etc.
+    * Expanded user profiles. Save addresses, payment methods etc.
     * Add animations to give the UI some life.
