@@ -22,7 +22,7 @@ var products = [
     new Product({
         imagePath: "http://i.imgur.com/20jolrc.jpg",
         title: "Civiliation 6",
-        description: "Sid Meier's Civilization VI is a turn-based 4X video game and the sixth main title in the Civilization series. Civilization VI was developed by Firaxis Games, published by 2K Games, and distributed by Take-Two Interactive.",
+        description: "Sid Meier's Civilization VI is a turn-based 4X video game and the sixth main title in the Civilization series. Civilization VI was developed by Firaxis Games.",
         price: 60
     }),
     new Product({
@@ -34,13 +34,13 @@ var products = [
     new Product({
         imagePath: "http://i.imgur.com/LoWMBPd.jpg",
         title: "Overwatch",
-        description: "Overwatch is a team-based multiplayer first-person shooter video game developed and published by Blizzard Entertainment. It was released in May 2016 for Microsoft Windows, PlayStation 4, and Xbox One.",
+        description: "Overwatch is a team-based multiplayer first-person shooter video game developed and published by Blizzard Entertainment. It was released in May 2016.",
         price: 60
     }),
     new Product({
         imagePath: "http://i.imgur.com/OvuOduu.jpg",
         title: "Steep",
-        description: "Steep is an open world extreme sports video game developed by Ubisoft Annecy and published by Ubisoft for Microsoft Windows, PlayStation 4 and Xbox One. ",
+        description: "Steep is an open world extreme sports video game developed by Ubisoft Annecy and published by Ubisoft for Microsoft Windows, PlayStation 4 and Xbox One.",
         price: 60
     }),
     new Product({
