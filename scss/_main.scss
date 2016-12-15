@@ -126,3 +126,13 @@ span.qty {
   font-weight: bold;
   margin: 0 $spacer;
 }
+
+footer.footer {
+  margin-top: $spacer*2;
+  min-height: 20rem;
+  padding-top: $spacer*2;
+  color: #ffffff;
+  h6 {
+    margin-bottom: $spacer;
+  }
+}

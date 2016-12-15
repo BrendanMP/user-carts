@@ -5272,4 +5272,12 @@ span.qty {
   font-weight: bold;
   margin: 0 1rem; }
 
+footer.footer {
+  margin-top: 2rem;
+  min-height: 20rem;
+  padding-top: 2rem;
+  color: #ffffff; }
+  footer.footer h6 {
+    margin-bottom: 1rem; }
+
 /*# sourceMappingURL=app.css.map */
