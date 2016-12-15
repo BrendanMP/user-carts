@@ -25,6 +25,8 @@ The goal of this project was to create a basic boilerplate shop and checkout exp
 * Refactor controller functions into separate files.
 * Update image hosting to https.
 
+---------
+
 ### Future Features
 I'd like to continue to expand on the app and use this repo as place to experiment with new ideas and continue to learn more about working with server-side Node apps.
 * Create an Admin User & Dashboard for managing items and orders.
