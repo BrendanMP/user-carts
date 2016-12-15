@@ -22,7 +22,7 @@ var products = [
     new Product({
         imagePath: "https://i.imgur.com/20jolrc.jpg",
         title: "Civiliation 6",
-        description: "Sid Meier's Civilization VI is a turn-based 4X video game and the sixth main title in the Civilization series/",
+        description: "Sid Meier's Civilization VI is a turn-based 4X video game and the sixth main title in the Civilization series.",
         price: 60
     }),
     new Product({
