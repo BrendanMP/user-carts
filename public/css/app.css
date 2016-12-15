@@ -5185,7 +5185,9 @@ nav.navbar {
   padding-left: 0;
   padding-right: 0; }
   nav.navbar .container {
-    padding-right: 0; }
+    display: flex; }
+    nav.navbar .container.users {
+      padding-right: 0; }
   nav.navbar .menu {
     margin-top: 1rem; }
     nav.navbar .menu .nav-item {
