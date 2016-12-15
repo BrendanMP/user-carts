@@ -5181,6 +5181,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
+main.container {
+  min-height: 50vh; }
+
 nav.navbar {
   padding-left: 0;
   padding-right: 0; }
