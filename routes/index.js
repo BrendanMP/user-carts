@@ -77,7 +77,8 @@ router.post('/checkout', isLoggedIn, function (req, res, next) {
             cart: cart,
             address: req.body.address,
             name: req.body.name,
-            paymentId: charge.id
+            paymentId: charge.id,
+            orderNumber: Math.floor(Math.random()*9000) + 1000
         });
         order.save(function (err, result) {
 
