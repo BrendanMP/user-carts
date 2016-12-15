@@ -5184,10 +5184,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 nav.navbar {
   padding-left: 0;
   padding-right: 0; }
-  nav.navbar .container {
-    display: flex; }
-    nav.navbar .container.users {
-      padding-right: 0; }
+  nav.navbar .container.users {
+    padding-right: 0; }
   nav.navbar .menu {
     margin-top: 1rem; }
     nav.navbar .menu .nav-item {
