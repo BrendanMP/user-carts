@@ -10,22 +10,24 @@
     <div class="row">
         {{# each products }}
             <div class="col-sm-6 col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-img-bg" style="background-image: url({{ this.imagePath }})"></div>
-                    <div class="card-block">
-                        <div class="row">
-                            <div class="col-xs-9">
-                                <h6 class="card-title">{{ this.title }}</h6>
+                <div class="product-item">
+                    <div class="card">
+                        <div class="card-img-bg" style="background-image: url({{ this.imagePath }})"></div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-xs-9">
+                                    <h6 class="card-title">{{ this.title }}</h6>
+                                </div>
+                                <div class="col-xs-3 text-xs-right">
+                                    <h6 class="card-title text-md-right">${{ this.price }}</h6>
+                                </div>
                             </div>
-                            <div class="col-xs-3 text-xs-right">
-                                <h6 class="card-title text-md-right">${{ this.price }}</h6>
-                            </div>
+                            <hr class="mt-0">
+                            <p class="card-text text-muted small">{{ this.description }}</p>
                         </div>
-                        <hr class="mt-0">
-                        <p class="card-text text-muted small">{{ this.description }}</p>
                     </div>
+                    <a href="/add-to-cart/{{this._id}}" class="btn btn-block btn-primary">Add to Cart</a>
                 </div>
-                <a href="/add-to-cart/{{this._id}}" class="btn btn-block btn-primary">Add to Cart</a>
             </div>
         {{/each}}
     </div>

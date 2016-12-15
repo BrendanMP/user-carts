@@ -77,6 +77,7 @@ nav.navbar {
   padding: $spacer*2 0;
   .card {
     margin-bottom: 0;
+
     + .btn {
       margin-bottom: $spacer*2;
     }
@@ -141,3 +142,23 @@ footer.footer {
     margin-bottom: $spacer;
   }
 }
+
+
+@keyframes card-enter {
+  0% {
+    transform: scale(0.90) translateY(6rem);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.product-item {
+  animation: card-enter 700ms ease;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+
