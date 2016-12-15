@@ -52,7 +52,7 @@ var products = [
     new Product({
         imagePath: "https://i.imgur.com/9xKjoKM.jpg",
         title: "Dead Rising 4",
-        description: "Dead Rising 4 is an open world survival horror beat 'em up video game developed by Capcom Vancouver and published by Microsoft Studios for Microsoft Windows and Xbox One.",
+        description: "Dead Rising 4 is an open world survival horror beat 'em up video game developed by Capcom Vancouver.",
         price: 60
     })
 ];
